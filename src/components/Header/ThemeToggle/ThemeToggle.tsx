@@ -24,7 +24,7 @@ function ThemeToggle() {
     };
     
     return (
-        <button onClick={toggleTheme} className="bg-gray-400 rounded-3xl p-3 dark:border-gray-700 dark:bg-gray-700 dark:text-white" >
+        <button onClick={toggleTheme} className="bg-gray-400 rounded-3xl p-3 dark:border-gray-700 dark:bg-gray-700 dark:text-white">
             {isDarkMode ? 'Світла тема' : 'Темна тема'} 
         </button>
     );
