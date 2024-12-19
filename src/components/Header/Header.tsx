@@ -7,7 +7,7 @@ function Header() {
   return (
     <header className="flex justify-center pt-5 pb-5  border-b border-gray-300">
         <nav className="">
-            <ul className="flex gap-3">
+            <ul className="flex gap-3 max-600px:flex-wrap max-600px:gap-y-5 max-600px:justify-center">
                 <li className=" bg-gray-400 rounded-3xl p-3 dark:border-gray-700 dark:bg-gray-700 dark:text-white"><Link to={Pages.Home}>На головку сторінку</Link></li>
                 <li className=" bg-gray-400 rounded-3xl p-3 dark:border-gray-700 dark:bg-gray-700 dark:text-white"><Link to={Pages.ToDoAdd}>Додати новий запис</Link></li>
                 <ThemeToggle></ThemeToggle>
@@ -16,5 +16,6 @@ function Header() {
     </header>
   )
 }
+
 
 export default Header;

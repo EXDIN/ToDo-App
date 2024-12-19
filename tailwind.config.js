@@ -8,6 +8,10 @@ export default {
     extend: {
       colors: {
         beige: '#d2b48c',
+        beigeLight: '#E6E6FA',
+      },
+      screens: {
+        'max-600px': {'max': '600px'},
       },
     },
   },

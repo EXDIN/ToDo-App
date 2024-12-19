@@ -1,17 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import themeEnum from '../../../constants/enums/themeEnum';
 
 
 function ThemeToggle() {
-    const [isDarkMode, setIsDarkMode] = useState<boolean>(() => { return localStorage.getItem('theme') === 'dark'; });
+    const [isDarkMode, setIsDarkMode] = useState<boolean>(() => { 
+        return localStorage.getItem('theme') === themeEnum.dark;
+    });
     
     useEffect(() => {
         const body = document.body;
         if (isDarkMode) {
-            body.classList.add('dark');
-            localStorage.setItem('theme', 'dark');
+            body.classList.add(themeEnum.dark);
+            localStorage.setItem('theme', themeEnum.dark);
         } else {
-            body.classList.remove('dark');
-            localStorage.setItem('theme', 'light');
+            body.classList.remove(themeEnum.dark);
+            localStorage.setItem('theme', themeEnum.light);
         }
     }, [isDarkMode]);
     
@@ -27,6 +30,5 @@ function ThemeToggle() {
     );
 };
     
-    
-    
+     
 export default ThemeToggle

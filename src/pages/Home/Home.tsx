@@ -25,13 +25,13 @@ function Home() {
 
   return (
     <main className="flex flex-col text-center">
-      <div className="flex justify-center gap-x-3 p-5">
+      <div className="flex justify-center gap-x-3 p-5 max-600px:flex-wrap max-600px:gap-y-5">
         <input className="border border-gray-400 rounded-3xl p-3 dark:border-gray-700 dark:bg-gray-700 dark:text-white" onChange={(e) => setFilter(e.target.value)} value={filter} placeholder="Пошук по статтям"></input>
-        <Link className="bg-gray-400 rounded-3xl p-3 dark:border-gray-700 dark:bg-gray-700 dark:text-white" to={Pages.ToDoAdd}>Додати задачу</Link>
+        <Link className="bg-gray-400 rounded-3xl p-3 dark:border-gray-700 dark:bg-gray-700 dark:text-white" to={Pages.ToDoAdd}>Додати нову задачу</Link>
       </div>
       {filteredTodos 
-        ? <ul className="max-w-[800px] grid grid-cols-4 items-center self-center gap-5">
-            {filteredTodos.map(el => <Todo key={el.id} task={el}></Todo>)}
+        ? <ul className="max-w-[800px] grid grid-cols-4 items-center self-center gap-5 p-5  max-600px:grid-cols-2">
+            {filteredTodos.map(task => <Todo key={task.id} task={task}></Todo>)}
           </ul>
         : null
       }

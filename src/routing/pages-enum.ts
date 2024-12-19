@@ -1,7 +1,7 @@
 enum Pages {
     Home = "/",
     Undefined = "/*",
-    ToDoAdd = "/add-todo"
+    ToDoAdd = "/add-todo",
 }
 
 export default Pages;

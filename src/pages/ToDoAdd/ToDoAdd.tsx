@@ -33,9 +33,9 @@ function ToDoAdd() {
 
   return (
     <form onSubmit={e => handleForm(e)} className="flex flex-col min-w-[300px] max-w-[500px] p-4 justify-center self-center gap-y-2">
-      <input className="bg-gray-300 p-2 rounded-lg" required placeholder="Назва" onChange={e => setTodo({...todo, title: e.target.value})}></input>
-      <input className="bg-gray-300 p-2 rounded-lg " placeholder="Опис" onChange={e => setTodo({...todo, description: e.target.value})}></input>
-      <button type="submit" className="rounded-lg bg-beige p-2">Додати завдання</button>
+      <input className="bg-white dark:bg-gray-300 p-2 rounded-lg" required placeholder="Назва" onChange={e => setTodo({...todo, title: e.target.value})}></input>
+      <input className="bg-white dark:bg-gray-300 p-2 rounded-lg " placeholder="Опис" onChange={e => setTodo({...todo, description: e.target.value})}></input>
+      <button type="submit" className="rounded-lg bg-gray-300 dark:bg-beige p-2">Створити завдання</button>
     </form>
   )
 }

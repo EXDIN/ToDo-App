@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import Pages from '../../routing/pages-enum';
 
+
 function Page404() {
   return (
     <div className='text-center p-5 flex flex-col gap-y-3 justify-center'>
@@ -9,5 +10,6 @@ function Page404() {
     </div>
   )
 }
+
 
 export default Page404;
