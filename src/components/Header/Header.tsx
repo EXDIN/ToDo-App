@@ -5,7 +5,7 @@ import ThemeToggle from "./ThemeToggle/ThemeToggle";
 
 function Header() {
   return (
-    <header className="flex justify-center pt-5 pb-5 border-b border-gray-300 sticky top-0 bg-gray-800 bg-opacity-90">
+    <header className="flex justify-center pt-5 pb-5 border-b border-gray-300 sticky top-0 bg-beigeLight dark:bg-gray-800 bg-opacity-90 dark:bg-opacity-90">
         <nav>
             <ul className="flex gap-3 max-600px:flex-wrap max-600px:gap-y-5 max-600px:justify-center">
                 <li className=" bg-gray-400 rounded-3xl p-3 dark:border-gray-700 dark:bg-gray-700 dark:text-white
