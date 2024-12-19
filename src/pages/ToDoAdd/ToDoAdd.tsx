@@ -32,14 +32,14 @@ function ToDoAdd() {
   }
 
   return (
-    <form onSubmit={e => handleForm(e)} className="flex flex-col min-w-[300px] max-w-[500px] p-4 justify-center self-center gap-y-2 flex-auto">
-      <input className="bg-white dark:bg-gray-300 p-2 rounded-lg"
+    <form onSubmit={e => handleForm(e)} className="flex flex-col w-screen p-4 justify-center self-center gap-y-2 flex-auto">
+      <input className="bg-white dark:bg-gray-300 p-2 rounded-lg w-1/5 self-center min-w-[300px]"
         required placeholder="Назва" onChange={e => setTodo({...todo, title: e.target.value})}>
       </input>
-      <input className="bg-white dark:bg-gray-300 p-2 rounded-lg"
+      <textarea className="bg-white dark:bg-gray-300 p-2 rounded-lg w-1/5 self-center min-w-[300px]"
         placeholder="Опис" onChange={e => setTodo({...todo, description: e.target.value})}>
-      </input>
-      <button type="submit" className="rounded-lg bg-gray-300 dark:bg-beige p-2">Створити завдання</button>
+      </textarea>
+      <button type="submit" className="rounded-lg bg-gray-300 dark:bg-beige p-2 w-1/5 self-center min-w-[300px]">Створити завдання</button>
     </form>
   )
 }
