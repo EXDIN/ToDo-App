@@ -32,7 +32,7 @@ function ToDoAdd() {
   }
 
   return (
-    <form onSubmit={e => handleForm(e)} className="flex flex-col min-w-[300px] max-w-[500px] p-4 justify-center self-center gap-y-2">
+    <form onSubmit={e => handleForm(e)} className="flex flex-col min-w-[300px] max-w-[500px] p-4 justify-center self-center gap-y-2 flex-auto">
       <input className="bg-white dark:bg-gray-300 p-2 rounded-lg"
         required placeholder="Назва" onChange={e => setTodo({...todo, title: e.target.value})}>
       </input>

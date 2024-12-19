@@ -31,7 +31,9 @@ function Home() {
           value={filter}
           placeholder="Пошук по статтям">
         </input>
-        <Link className="bg-gray-400 rounded-3xl p-3 dark:border-gray-700 dark:bg-gray-700 dark:text-white"
+        <Link className="bg-gray-400 rounded-3xl p-3 dark:border-gray-700 dark:bg-gray-700 dark:text-white 
+        hover:shadow-lg hover:shadow-gray-500 hover:shadow-center 
+      dark:hover:shadow-white duration-200"
           to={Pages.ToDoAdd}>
            Додати нову задачу
         </Link>
