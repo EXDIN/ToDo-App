@@ -3,7 +3,7 @@ import Home from "../pages/Home/Home";
 import Pages from "./pages-enum";
 import Page404 from "../pages/Page404/Page404";
 import Layout from "../pages/Layout/Layout";
-import ArticleAdd from "../pages/ToDoAdd/ToDoAdd";
+import ToDoAdd from "../pages/ToDoAdd/ToDoAdd";
 
 
 const routes: RouteObject[] = [
@@ -17,7 +17,7 @@ const routes: RouteObject[] = [
         },
         {
             path: Pages.ToDoAdd,
-            element: <ArticleAdd />,
+            element: <ToDoAdd />,
         },
         {
             path: Pages.Undefined,
